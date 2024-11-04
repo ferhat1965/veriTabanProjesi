@@ -1,2 +1,2 @@
 # veriTabanProjesi
-merhaba bu benim ilk projem
+bu benim ilk projem
