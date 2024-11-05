@@ -1,6 +1,2 @@
-# VeriTabanProjesi
+# SAĞLIK MERKEZİ YÖNETİM SİSTEMİ VERİTABAN PROJESİ
 ## ÖZET
-- DW
-.DWD
-. WDDW
-  .
