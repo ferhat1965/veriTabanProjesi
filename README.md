@@ -75,5 +75,6 @@ alınmıştır.
 
 # E-R Diyagram
 
+![erd yeni](https://github.com/user-attachments/assets/7a21eff1-58a9-443e-ae92-af5f1b6fcba2)
 
 
