@@ -1,2 +1,4 @@
 # SAĞLIK MERKEZİ YÖNETİM SİSTEMİ VERİTABAN PROJESİ
-## ÖZET
+
+## Katılımcılar
+
