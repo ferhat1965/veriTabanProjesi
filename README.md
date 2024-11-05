@@ -17,3 +17,4 @@ da sahiptir. Yöneticiler, doktorlar ve sekreterler
 kendi rollerine uygun işlemleri yapabilirken, 
 hastalar da tahlil sonuçlarına, reçetelere ve 
 randevu bilgilerine erişim sağlayabilir.
+
