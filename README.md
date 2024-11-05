@@ -26,3 +26,17 @@ tanıyarak, tüm işlemlerin güvenli ve geçerli bir
 şekilde gerçekleştirilmesini sağlar. Ayrıca, kullanıcı 
 verilerine yeniden erişmesi amacıyla bir 
 yedekleme sistemi bulunmaktadır.
+
+### yöneticiler
+- Sistem, Süper Yönetici tarafından yönetilen 
+bir yapıya sahiptir. Süper Yönetici, diğer 
+yöneticileri sisteme ekleyebilir, kaldırabilir ve 
+bilgilerini güncelleyebilir.
+- Bütün yöneticiler, doktorların, sekreterlerin ve 
+merkezde yer alan ilaçların yanı sıra doktor 
+uzmanlıklarının bilgilerini de ekleyebilir, 
+kaldırabilir ve güncelleyebilir.
+-  Yöneticiler, doktorların izinli günlerini sisteme 
+ekleyerek, bu bilgilere herkesin güvenilir 
+şekilde erişebilmesini sağlar.
+
