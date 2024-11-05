@@ -40,3 +40,35 @@ kaldırabilir ve güncelleyebilir.
 ekleyerek, bu bilgilere herkesin güvenilir 
 şekilde erişebilmesini sağlar.
 
+### Sekerterler
+- Yeni hastalar için sistemde kayıt 
+oluşturabilirler.
+- Mevcut hastalar için güvenilir bir şekilde belirli 
+bir tarih ve saat aralığında randevu 
+planlayabilirler.
+
+### Doktorlar
+- Muayene sonrasında reçete yazabilir ya da 
+hastadan tahlil isteyebilirler. Tahlil sonuçlarına 
+göre gerekirse reçete düzenleyebilirler. 
+Gerekmeyen durumlarda ne tahlil ne de reçete 
+yazarlar.
+- Ayrıca, doktorların izinli oldukları günler 
+sisteme kaydedilerek, doktorların çalışma 
+takvimi güvenilir bir biçimde yönetilir.
+
+### Hastalar
+- Aldıkları randevuların detaylarına güvenle 
+ulaşabilirler.
+- Yaptıkları tahlil sonuçlarına sistem üzerinden 
+güvenilir şekilde erişebilirler.
+- Reçetelerine ve reçetede belirtilen ilaç 
+bilgilerine güvenle ulaşabilirler.
+
+### Yedekleme Sistemi
+- Sistemdeki tüm veriler, kullanıcıların 
+geçerliliğini sağlamak ve güvenliğini korumak 
+amacıyla düzenli olarak yedeklenir. Bu 
+sayede, hasta, doktor ve diğer kritik bilgiler 
+kaybolma riskine karşı güvence altına 
+alınmıştır.
