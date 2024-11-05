@@ -72,3 +72,6 @@ amacıyla düzenli olarak yedeklenir. Bu
 sayede, hasta, doktor ve diğer kritik bilgiler 
 kaybolma riskine karşı güvence altına 
 alınmıştır.
+
+# E-R Diyagram
+
