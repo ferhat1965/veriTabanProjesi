@@ -27,7 +27,7 @@ tanıyarak, tüm işlemlerin güvenli ve geçerli bir
 verilerine yeniden erişmesi amacıyla bir 
 yedekleme sistemi bulunmaktadır.
 
-### yöneticiler
+### Yöneticiler
 - Sistem, Süper Yönetici tarafından yönetilen 
 bir yapıya sahiptir. Süper Yönetici, diğer 
 yöneticileri sisteme ekleyebilir, kaldırabilir ve 
