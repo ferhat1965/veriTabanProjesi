@@ -18,3 +18,11 @@ kendi rollerine uygun işlemleri yapabilirken,
 hastalar da tahlil sonuçlarına, reçetelere ve 
 randevu bilgilerine erişim sağlayabilir.
 
+### Detaylar
+Bu sistemde dört temel rol bulunmaktadır: 
+Yöneticiler, Doktorlar, Sekreterler ve Hastalar. 
+Sistem, her kullanıcının rolüne göre yetkiler 
+tanıyarak, tüm işlemlerin güvenli ve geçerli bir 
+şekilde gerçekleştirilmesini sağlar. Ayrıca, kullanıcı 
+verilerine yeniden erişmesi amacıyla bir 
+yedekleme sistemi bulunmaktadır.
