@@ -79,4 +79,102 @@ alınmıştır.
 
 ![erd yeni](https://github.com/user-attachments/assets/7a21eff1-58a9-443e-ae92-af5f1b6fcba2)
 
+# Tablolar ve Varlık - Nitelik İlişkisi
+
+## 1.Doktorlar
+
+| özellik       | Açıklama    | 
+|--------------|--------------|
+| ID           | İçerik 2     |
+| Ad           | İçerik 5     |
+| Soyad        | İçerik 8     |
+| Telefon      |              |
+| Cinsiyet     |              |
+|Doğum tarihi  |              |
+
+## 2.Hasta
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Tc        |          |
+|Ad        |          |
+|Soyad     |          |
+|yaş       |          |
+|Cinsiyet  |          |
+|Doğum Tarihi |       |
+|Telefon   |          |
+
+## 3.Sekreter
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Ad        |          |
+|Soyad     |          |
+|yaş       |          |
+|Cinsiyet  |          |
+|Doğum Tarihi |       |
+|Telefon   |          |
+
+## 4.ilaç
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Ad        |          |
+|Amaç      |          |
+|Max yaş   |          |
+|Min yaş   |          |
+|Firma     |          |
+|Tür       |          |
+|Etkin madde|          |
+
+## 5.Uzmanlık
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Ad        |          |
+|Açıklama  |          |
+
+## 6.Günler
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Ad        |          |
+
+## 7.Randevu
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Tarih     |          |
+|saat      |          |
+
+## 8.Tahliller
+
+|özellik   | Açıklama |
+|----------|----------|
+|ID        |          |
+|Ad        |          |
+|Max değer |          |
+|Min değer |          |
+
+
+
+# Varlıklar-ilişkiler tablosu
+|Varlık 1  | Varlık 2 | ilişki Türü|
+|----------|----------|------------|
+|          |          |            |
+|          |          |            |
+|          |          |            | 
+|          |          |            | 
+|          |          |            |
+|          |          |            |
+|          |          |            |
+|          |          |            |
+
+
 
