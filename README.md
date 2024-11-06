@@ -183,17 +183,18 @@ alınmıştır.
 |----------|----------|
 |Tah_Sc_id | Tahlil sonuç ID (PK)        |
 |Is_Tah_id | İstenmiş tahlil ID (FK)         |
-|degerler  |          |
-|tarih  |          |
-|Aciklama  |          |
+|degerler  | Her tahlilnin değeri         |
+|tarih     | Tahlil sonuç tarihi         |
+|Aciklama  | Tahlil açıklaması         |
 
 ## 13.ALERJİLER
 
 |özellik   | Açıklama |
 |----------|----------|
-|ID        |          |
-|Türü      |          |
-|Açıklama  |          |
+|Alej_ID   | Alerji ID         |
+|Turu      | Alerji türü         |
+|Etk_madde | Etkileyen maddeler      |          |
+|Aciklama  | Alerji açıklaması        |
 
 ## 14.HASTA_ALERJİLERİ
 
