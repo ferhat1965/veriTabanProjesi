@@ -92,7 +92,7 @@ alınmıştır.
 | Cinsiyet     |              |
 |Doğum tarihi  |              |
 
-## 2.Hasta
+## 2.H*asta
 
 |özellik   | Açıklama |
 |----------|----------|
