@@ -81,88 +81,137 @@ alınmıştır.
 
 # Tablolar ve Varlık - Nitelik İlişkisi
 
-## 1.Doktorlar
+## 1.Kullanıcılar
+
+| özellik       | Açıklama    |
+|--------------|--------------|
+| K_ID         | Kullanıcı ID (PK)  |
+| Ad           | Kullanıcının adı    |
+| Soyad        | Kullanıcının soyadı     |
+| Telefon      | Kullanıcının telefonu             |
+| Cinsiyet     | Kullanıcının cinsiyeti            |
+| Email        | Kullanıcının e-posta adresi            |
+| Şifre        | Kullanıcının şifresi              |
+| Doğum tarihi | Kullanıcının doğum tarihi              |
+| Yaş          | Kullanıcının yaşı              |
+| Rol          | Kullanıcının rolu             | 
+
+## 2.Yönetici
 
 | özellik       | Açıklama    | 
 |--------------|--------------|
-| ID           | İçerik 2     |
-| Ad           | İçerik 5     |
-| Soyad        | İçerik 8     |
-| Telefon      |              |
-| Cinsiyet     |              |
-|Doğum tarihi  |              |
+| Y_ID         | Yönetici ID (PK, FK-Kullanıcılar.kullanıcıID)|
 
-## 2.H*asta
+## 3.Doktorlar
+
+| özellik       | Açıklama    | 
+|--------------|--------------|
+| D_ID         | Doktor ID (PK, FK-Kullanıcılar.kullanıcıID)     |
+| Uzmanlık_ID   | Dokror uzmanlığı     |
+
+## 4.Hastalar
+
+|özellik   | Açıklama |
+|----------|----------|
+|H_ID      | Hasta ID (PK, FK-Kullanıcılar.kullanıcıID)|
+|Tc        | Hasta TC (PK)         |
+
+## 5.Sekreter
+
+|özellik   | Açıklama |
+|----------|----------|
+|S_ID| Sekreter ID (PK, FK-Kullanıcılar.kullanıcıID)           |
+
+## 6.ilaç
+
+|özellik   | Açıklama |
+|----------|----------|
+|ilac_ID   | İlaç ID (PK)         |
+|Ad        | İlac adı           |
+|Amaç      | İlac amacı         |
+|Max yaş   | Maksimum kullanıcı yaşı        |
+|Min yaş   | Minimum kullanıcı yaşı         |
+|Firma     | İlacı üreten firma         |
+|Tür       | İlac türü         |
+|Etkin madde| İlaç içinde etkin madde         |
+
+## 7.Uzmanlık
+
+|özellik   | Açıklama |
+|----------|----------|
+|Uz_ID     | Uzmanlık ID (PK)          |
+|Ad        | Uzmanlık adı         |
+|Aciklama  | Uzmanlığın açıklaması         |
+
+## 8.Gunler
+
+|özellik   | Açıklama |
+|----------|----------|
+|Gun_ID    | Gün ID (PK)         |
+|Ad        | Gün adı         |
+
+## 9.Randevu
+
+|özellik   | Açıklama |
+|----------|----------|
+|Rnd_ID    | Randevu ID (PK)         |
+|Durum     | Randevunun durumu         |
+|Tarih     | Randevunun tarihi         |
+|saat      | Randevunun saatı         |
+
+## 10.Tahliller
+
+|özellik   | Açıklama |
+|----------|----------|
+|Tah_ID    | Tahlil ID (PK)         |
+|Ad        | Tahlil adı         |
+|Max_deger | Maksimum normal değer         |
+|Min_deger | Minimum normal değer         |
+
+## 11.Istenmis_Tahliller
+
+|özellik   | Açıklama |
+|----------|----------|
+|Is_Tah_id | İstenmiş tahlil ID (PK)        |
+|randevu_id| Randevu ID (FK)        |
+|tahlil_id | Tahlilerin ID'leri         |
+|Durum     | İstenmiş tahlil durumu          |
+
+## 12.TAHLIL_SONUCLARI
+
+|özellik   | Açıklama |
+|----------|----------|
+|Tah_Sc_id | Tahlil sonuç ID (PK)        |
+|Is_Tah_id | İstenmiş tahlil ID (FK)         |
+|degerler  |          |
+|tarih  |          |
+|Aciklama  |          |
+
+## 13.ALERJİLER
 
 |özellik   | Açıklama |
 |----------|----------|
 |ID        |          |
-|Tc        |          |
-|Ad        |          |
-|Soyad     |          |
-|yaş       |          |
-|Cinsiyet  |          |
-|Doğum Tarihi |       |
-|Telefon   |          |
-
-## 3.Sekreter
-
-|özellik   | Açıklama |
-|----------|----------|
-|ID        |          |
-|Ad        |          |
-|Soyad     |          |
-|yaş       |          |
-|Cinsiyet  |          |
-|Doğum Tarihi |       |
-|Telefon   |          |
-
-## 4.ilaç
-
-|özellik   | Açıklama |
-|----------|----------|
-|ID        |          |
-|Ad        |          |
-|Amaç      |          |
-|Max yaş   |          |
-|Min yaş   |          |
-|Firma     |          |
-|Tür       |          |
-|Etkin madde|          |
-
-## 5.Uzmanlık
-
-|özellik   | Açıklama |
-|----------|----------|
-|ID        |          |
-|Ad        |          |
+|Türü      |          |
 |Açıklama  |          |
 
-## 6.Günler
+## 14.HASTA_ALERJİLERİ
 
 |özellik   | Açıklama |
 |----------|----------|
-|ID        |          |
-|Ad        |          |
+|hasta_id  |          |
+|alerji_id |          |
+|açıklama  |          |
 
-## 7.Randevu
-
-|özellik   | Açıklama |
-|----------|----------|
-|ID        |          |
-|Tarih     |          |
-|saat      |          |
-
-## 8.Tahliller
+## 15.LOG
 
 |özellik   | Açıklama |
 |----------|----------|
-|ID        |          |
-|Ad        |          |
-|Max değer |          |
-|Min değer |          |
-
-
+|id          |          |
+|kullanıcı_id|          |
+|işlem       |          |
+|tarih       |          |
+|detaylar    |          |
 
 # Varlıklar-ilişkiler tablosu
 |Varlık 1  | Varlık 2 | ilişki Türü|
