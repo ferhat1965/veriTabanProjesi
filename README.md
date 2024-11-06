@@ -2,9 +2,9 @@
 
 ## Katılımcılar
 
-- FATMA HALİD < 215260602 />
--  FERHAT RAMMOK <215260618 />
--  MUHAMMED ZARZOUR < 215260614 />
+- FATMA HALİD <215260602/>
+- FERHAT RAMMOK <215260618/>
+- MUHAMMED ZARZOUR <215260614/>
 
   ## Proje hakkında
 
@@ -81,7 +81,7 @@ alınmıştır.
 
 # Tablolar ve Varlık - Nitelik İlişkisi
 
-## 1.Kullanıcılar
+## 1.Kullanicilar
 
 | özellik       | Açıklama    |
 |--------------|--------------|
@@ -91,12 +91,12 @@ alınmıştır.
 | Telefon      | Kullanıcının telefonu             |
 | Cinsiyet     | Kullanıcının cinsiyeti            |
 | Email        | Kullanıcının e-posta adresi            |
-| Şifre        | Kullanıcının şifresi              |
-| Doğum tarihi | Kullanıcının doğum tarihi              |
-| Yaş          | Kullanıcının yaşı              |
+| Sifre        | Kullanıcının şifresi              |
+| Dogum tarihi | Kullanıcının doğum tarihi              |
+| Yas          | Kullanıcının yaşı              |
 | Rol          | Kullanıcının rolu             | 
 
-## 2.Yönetici
+## 2.Yoneticiler
 
 | özellik       | Açıklama    | 
 |--------------|--------------|
@@ -200,31 +200,35 @@ alınmıştır.
 
 |özellik   | Açıklama |
 |----------|----------|
-|hasta_id  |          |
-|alerji_id |          |
-|açıklama  |          |
+|H_id      | Hasta ID  |
+|alerji_id | Alerji ID    |
+|açıklama  | Hasta alerjiler açıklaması         |
 
 ## 15.LOG
 
 |özellik   | Açıklama |
 |----------|----------|
-|id          |          |
-|kullanıcı_id|          |
-|işlem       |          |
-|tarih       |          |
-|detaylar    |          |
+|Log_id          | Log ID         |
+|K_id        | Kullanıcı ID|
+|işlem       | Yapildığı işlem         |
+|tarih       | Log tarihi         |
+|detay       | Log hakkında detaylar         |
 
 # Varlıklar-ilişkiler tablosu
 |Varlık 1  | Varlık 2 | ilişki Türü|
 |----------|----------|------------|
-|          |          |            |
-|          |          |            |
-|          |          |            | 
-|          |          |            | 
-|          |          |            |
-|          |          |            |
-|          |          |            |
-|          |          |            |
+| Kullanicilar          |  Hastalar        |  Bir (1, 1)         |
+|    Kullanicilar      |    Sekreter      |  Bir (1, 1)          |
+| Kullanicilar         |  Doktorlar        |   Bir (1, 1)         | 
+| Kullanicilar         |   Yoneticiler       |  Bir (1, 1)          | 
+|  Sekreter        |   Gunler       |   Çalıştığı (n,m)         |
+|   Doktorlar       |   Gunler       |  Çalıştığı (n,m)         |
+|  Uzmanlık       |     Doktorlar     | Uzmanlığı (1,m)           |
+|  Hastalar        |   Doktorlar       |   Randevu(n,m)         |
+|  Randevu        |   Reçete       |   Verdiği (1,1)         |
+|   Randevu       |   Gunler       |  Çalıştığı (n,m)         |
+|  Uzmanlık       |     Doktorlar     | Uzmanlığı (1,m)           |
+|  Hastalar        |   Doktorlar       |   Randevu(n,m)         |
 
 
 
