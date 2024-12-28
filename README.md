@@ -31,8 +31,7 @@ yedekleme sistemi bulunmaktadır.
 
 ### Yöneticiler
 - Sistem, Süper Yönetici tarafından yönetilen 
-bir yapıya sahiptir. Süper Yönetici, diğer 
-yöneticileri sisteme ekleyebilir, kaldırabilir ve 
+bir yapıya sahiptir. Süper Yönetici, diğer tüm kullanıcılar sisteme ekleyebilir, kaldırabilir ve 
 bilgilerini güncelleyebilir.
 - Bütün yöneticiler, doktorların, sekreterlerin ve 
 merkezde yer alan ilaçların yanı sıra doktor 
@@ -100,27 +99,34 @@ alınmıştır.
 
 | özellik       | Açıklama    | 
 |--------------|--------------|
-| Y_ID         | Yönetici ID (PK, FK-Kullanıcılar.kullanıcıID)|
+| Y_ID         | Yönetici ID |
+| K_ID         | Kullanıcı ID (PK, FK-Kullanıcılar.kullanıcıID)|
 
 ## 3.Doktorlar
 
 | özellik       | Açıklama    | 
 |--------------|--------------|
-| D_ID         | Doktor ID (PK, FK-Kullanıcılar.kullanıcıID)     |
-| Uzmanlık_ID   | Dokror uzmanlığı     |
+| D_ID         | Doktor ID     |
+| K_ID         | Kullanıcı ID (PK, FK-Kullanıcılar.kullanıcıID)     |
+| BasUzYili   | Çalışma başlangıç yılı    |
+| DeneyimYili   | Deneyim yılı    |
+| Aktif   | Dokrorun aktiflik durumu     |
 
 ## 4.Hastalar
 
 |özellik   | Açıklama |
 |----------|----------|
-|H_ID      | Hasta ID (PK, FK-Kullanıcılar.kullanıcıID)|
+|H_ID      | Hasta ID |
+|K_ID      | Kullanıcı ID (PK, FK-Kullanıcılar.kullanıcıID)|
 |Tc        | Hasta TC (PK)         |
 
 ## 5.Sekreter
 
 |özellik   | Açıklama |
 |----------|----------|
-|S_ID| Sekreter ID (PK, FK-Kullanıcılar.kullanıcıID)           |
+|S_ID| Sekreter ID         |
+|K_ID| Kullanıcı ID (PK, FK-Kullanıcılar.kullanıcıID)           |
+| Aktif   | Sekreterin aktiflik durumu     |
 
 ## 6.ilaç
 
@@ -135,22 +141,30 @@ alınmıştır.
 |Tür       | İlac türü         |
 |Etkin madde| İlaç içinde etkin madde         |
 
-## 7.Uzmanlık
+## 7.Uzmanlik
 
 |özellik   | Açıklama |
 |----------|----------|
-|Uz_ID     | Uzmanlık ID (PK)          |
+|Uz_ID     | Uzmanlık kimliği (PK)          |
 |Ad        | Uzmanlık adı         |
-|Aciklama  | Uzmanlığın açıklaması         |
+|AnaUzmanlikID | Ana uzmanlık kimliği (alt uzmanlıklar için) (FK-Uzmanlik.Uz_ID)       |
 
-## 8.Gunler
+## 8.DoktorUzmanlik
+
+|özellik   | Açıklama |
+|----------|----------|
+|DoktorUzmanlikID     | İlişki kimliği (PK)   |
+|D_ID       | Doktor kimliği ( FK-Doktorlar.D_ID)        |
+|Uz_ID | Uzmanlık kimliği (FK-Uzmanlik.Uz_ID)       |
+
+## 9.Gunler
 
 |özellik   | Açıklama |
 |----------|----------|
 |Gun_ID    | Gün ID (PK)         |
 |Ad        | Gün adı         |
 
-## 9.Randevu
+## 10.Randevu
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -159,7 +173,7 @@ alınmıştır.
 |Tarih     | Randevunun tarihi         |
 |saat      | Randevunun saatı         |
 
-## 10.Tahliller
+## 11.Tahliller
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -168,7 +182,7 @@ alınmıştır.
 |Max_deger | Maksimum normal değer         |
 |Min_deger | Minimum normal değer         |
 
-## 11.Istenmis_Tahliller
+## 12.Istenmis_Tahliller
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -177,7 +191,7 @@ alınmıştır.
 |tahlil_id | Tahlilerin ID'leri         |
 |Durum     | İstenmiş tahlil durumu          |
 
-## 12.TAHLIL_SONUCLARI
+## 13.TAHLIL_SONUCLARI
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -187,7 +201,7 @@ alınmıştır.
 |tarih     | Tahlil sonuç tarihi         |
 |Aciklama  | Tahlil açıklaması         |
 
-## 13.ALERJİLER
+## 14.ALERJİLER
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -196,7 +210,7 @@ alınmıştır.
 |Etk_madde | Etkileyen maddeler      |          |
 |Aciklama  | Alerji açıklaması        |
 
-## 14.HASTA_ALERJİLERİ
+## 15.HASTA_ALERJİLERİ
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -204,7 +218,7 @@ alınmıştır.
 |alerji_id | Alerji ID    |
 |açıklama  | Hasta alerjiler açıklaması         |
 
-## 15.LOG
+## 16.LOG
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -223,12 +237,10 @@ alınmıştır.
 | Kullanicilar         |   Yoneticiler       |  Bir (1, 1)          | 
 |  Sekreter        |   Gunler       |   Çalıştığı (n,m)         |
 |   Doktorlar       |   Gunler       |  Çalıştığı (n,m)         |
-|  Uzmanlık       |     Doktorlar     | Uzmanlığı (1,m)           |
+|  Uzmanlık       |     Doktorlar     | Uzmanlığı (n,m)           |
 |  Hastalar        |   Doktorlar       |   Randevu(n,m)         |
 |  Randevu        |   Reçete       |   Verdiği (1,1)         |
 |   Randevu       |   Gunler       |  Çalıştığı (n,m)         |
-|  Uzmanlık       |     Doktorlar     | Uzmanlığı (1,m)           |
-|  Hastalar        |   Doktorlar       |   Randevu(n,m)         |
 
 
 
