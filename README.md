@@ -76,7 +76,7 @@ alınmıştır.
 
 # E-R Diyagram
 
-![SMYS Diagram](https://github.com/user-attachments/assets/0d960deb-cb68-4222-9313-f33e34a72d50)
+![SMYS Diagram](https://github.com/user-attachments/assets/4cc564db-d850-496b-ac90-fe6bc2c303c4)
 
 # Tablolar ve Varlık - Nitelik İlişkisi
 
