@@ -127,12 +127,6 @@ alınmıştır.
 |kul_id    | Kullanıcı kimliği (FK, kullanici.kul_id)       |
 |aktif     | Sekreterin aktiflik durumu (true/false)        |
 
-## 6.tarih_yas
-
-|özellik   | Açıklama |
-|----------|----------|
-|dogumTarihi | Kullanıcının doğum tarihi (PK - FK, kullanici.dogumTarihi)   |
-|yas         | Doğum tarihine göre hesaplanan yaş                           |
 
 ## 7.uzmanlik
 
