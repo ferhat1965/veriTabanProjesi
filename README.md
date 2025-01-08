@@ -287,7 +287,6 @@ alınmıştır.
 - doktor (dktr_id PK, kul_id FK, basUzmYili, deneyimYili, aktif)
 - hasta (hst_id PK, kul_id FK, tc UNIQUE)
 - sekreter (skr_id PK, kul_id FK, aktif)
-- tarih_yas (dogumTarihi PK-FK, yas)
 - uzmanlik (uzm_id PK, ad, anaUzm_id FK)
 - doktor_uzmanlik (dktrUzm_id PK, dktr_id FK, uzm_id FK)
 - gunler (gun_id PK, ad)
