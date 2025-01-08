@@ -269,7 +269,6 @@ alınmıştır.
 |kullanici | doktor	   | Bir (1,1) |
 |kullanici | hasta	   | Bir (1,1) |
 |kullanici | sekreter	 | Bir (1,1) |
-|kullanici | tarih_yas | Ait (1,1) |
 |uzmanlik  | uzmanlik	 | Dallandığı (1,n)|
 |uzmanlik	 | doktor	   | Uzmanlığı (n,m) |
 |gunler	   | doktor	   | Çalıştığı (n,m) |
