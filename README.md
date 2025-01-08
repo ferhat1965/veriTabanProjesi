@@ -128,7 +128,7 @@ alınmıştır.
 |aktif     | Sekreterin aktiflik durumu (true/false)        |
 
 
-## 7.uzmanlik
+## 6.uzmanlik
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -136,7 +136,7 @@ alınmıştır.
 |ad        | Uzmanlık adı (Kardiyoloji vb.)                 |
 |anaUzm_id | Ana uzmanlık kimliği (alt uzmanlıklar için, FK)|
 
-## 8.doktor_uzmanlik
+## 7.doktor_uzmanlik
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -144,28 +144,28 @@ alınmıştır.
 |dktr_id     | Doktor kimliği (FK, doktor.dktr_id)          |
 |uzm_id      | Uzmanlık kimliği (FK, uzmanlik.uzm_id)       |
 
-## 9.gunler
+## 8.gunler
 
 |özellik   | Açıklama |
 |----------|----------|
 |gun_id    | Gün kimliği (PK)                               |
 |ad        | Günün adı (örneğin, Pazartesi)                 |
 
-## 10.doktor_gunler
+## 9.doktor_gunler
 
 |özellik   | Açıklama |
 |----------|----------|
 |dktr_id   | Doktor kimliği (FK, doktor.dktr_id)           |
 |gun_id    | Gün kimliği (FK, gunler.gun_id)               |
 
-## 11.sekreter_gunler
+## 10.sekreter_gunler
 
 |özellik   | Açıklama |
 |----------|----------|
 |skr_id    | Sekreter kimliği (FK, sekreter.skr_id)        |
 |gun_id    | Gün ID (FK, gunler.gun_id)                    |
 
-## 12.randevu
+## 11.randevu
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -176,7 +176,7 @@ alınmıştır.
 |tarih     | Randevu tarihi  |
 |saat      | Randevu saati   |
 
-## 13.ilac
+## 12.ilac
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -189,7 +189,7 @@ alınmıştır.
 |tur       | İlaç türü (tablet, şurup vb.)    |
 |etkinMadde| İlaçta bulunan etkin madde       |
 
-## 14.recete
+## 13.recete
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -198,7 +198,7 @@ alınmıştır.
 |aciklama  | Reçete hakkında açıklama                           |
 |gecerlilikGunSayisi | Reçetenin geçerlilik süresi (gün olarak) |
 
-## 15.recetede_ilaclar
+## 14.recetede_ilaclar
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -207,7 +207,7 @@ alınmıştır.
 |kutuAdedi | Reçetede ilaç kutu sayısı          |
 |doz       | Günlük alınması gereken doz        |
 
-## 16.tahlil
+## 15.tahlil
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -216,7 +216,7 @@ alınmıştır.
 |maxDeger  | Maksimum normal değer  |
 |minDeger  | Minimum normal değer   |
 
-## 17.tahlil_talebi
+## 16.tahlil_talebi
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -225,7 +225,7 @@ alınmıştır.
 |durum     | Tahlil talep durumu ("Beklemede", "Teslim edildi" vb.) |
 |tlbTarih  | Tahlil talep tarihi                                    |
 
-## 18.tahlil_sonucu
+## 17.tahlil_sonucu
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -235,7 +235,7 @@ alınmıştır.
 |sncTarih  | Tahlil sonuç tarihi                       |
 |aciklama  | Tahlil sonuç açıklaması                   |
 
-## 19.alerji
+## 18.alerji
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -243,7 +243,7 @@ alınmıştır.
 |turu      | Alerji türü (gıda, ilaç vb.)              |
 |etkMadde  | Etkileyen maddeler (alerji sebebi)        |
 
-## 20.hasta_alerjileri
+## 19.hasta_alerjileri
 
 |özellik   | Açıklama |
 |----------|----------|
@@ -251,7 +251,7 @@ alınmıştır.
 |alrj_id   | Alerji kimliği (FK, alerji.alrj_id)       |
 |aciklama  | Hasta alerjileri hakkında açıklama        |
 
-## 21.log
+## 20.log
 
 |özellik   | Açıklama |
 |----------|----------|
