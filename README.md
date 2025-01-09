@@ -251,15 +251,7 @@ alınmıştır.
 |alrj_id   | Alerji kimliği (FK, alerji.alrj_id)       |
 |aciklama  | Hasta alerjileri hakkında açıklama        |
 
-## 20.log
 
-|özellik   | Açıklama |
-|----------|----------|
-|log_id    | Log kimliği (PK)                          |
-|kul_id    | Kullanıcı kimliği (FK, kullanici.kul_id)  |
-|islem     | Yapılan işlem tipi                        |
-|tarih     | Log tarihi                                |
-|detay     | Log hakkında detaylar                     |
 
 
 # Varlıklar-ilişkiler tablosu
@@ -301,6 +293,6 @@ alınmıştır.
 - tahlil_sonucu (tahTlb_id FK, tah_id FK, deger, sncTarih, aciklama)
 - alerji (alrj_id PK, turu, etkMadde)
 - hasta_alerjileri (hst_id FK, alrj_id FK, aciklama)
-- log (log_id PK, kul_id FK, islem, tarih, detay)
+
 
 
